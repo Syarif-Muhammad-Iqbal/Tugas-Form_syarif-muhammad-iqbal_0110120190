@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>FORMULIR PENDAFTARAN</title>
+</head>
+<body style="margin-left: 400px;margin-right: 400px;background-color:#FFFAF0">
+    <fieldset style="background-color:#A9A9A9">
+    <h1><font face="arial" color="Black">Formulir Pendaftaran Peserta Didik Baru</font></h1><hr>
+    <form action="form.html" method="POST">
+    <table>
+	    <tr>
+            <td><label for="registration_number">Nomor Pendaftaran</label></td>
+            <td>: <input type="number" name="nomor" min="0" max="500" placeholder="enter three numbers" required=""></td><br>
+        </tr>
+        <tr>
+	        <td><label for="date">Tanggal</label></td>
+            <td>: <input type="date" name="date" required=""></td>
+        </tr>
+    </table><br>
+    <table>
+        <tr>
+            <td><strong>Data Pribadi</strong></td>
+        </tr>
+    </table><hr>
+    <table>
+        <tr>
+            <td><label for="nama">Nama Lengkap</label></td>
+            <td>: <input type="text"></td>
+        </tr>
+        <tr>
+            <td><label for="kelamin">Jenis Kelamin</label></td>
+            <td>: <label for="text">Pria</label><input type="radio" name="jk"><label for="">Perempuan</label><input type="radio" name="jk"></td>
+        </tr>
+        <tr>
+            <td><label for="lahir">Tempat Lahir</label></td>
+            <td>: <input type="text"></td>
+        </tr>
+        <tr>
+            <td><label for="lahir">Tanggal Lahir</label></td>
+            <td>: <input type="date" name="date" required=""></td>
+        </tr>
+        <tr>
+            <td><label for="nisn">NISN</label></td>
+            <td>: <input type="text"placeholder="Nomor Induk Sekolah Nasional"></td>
+        </tr>
+        <tr>
+            <td><label for="nik">NIK</label></td>
+            <td>: <input type="text"placeholder="Nomor Induk Kependudukan"></td>
+        </tr>
+        <tr>
+            <td><label for="asalsekolah">Asal SMP/MTs</label></td>
+            <td>: <input type="text"></td>
+        </tr>
+        <tr>
+            <td><label for="no.telepon">No.Telepon</label></td>
+            <td>: <input type="text"></td>
+        </tr>
+        <tr>
+            <td><label for="agama">Agama</label></td>
+            <td>: <select name='agama'>
+                <option value='text'>Lainnya</option>
+                <option value='islam'>Islam</option>
+                <option value='kristen'>Kristen</option>
+                <option value='katholik'>Katholik</option>
+                <option value='hindu'>Hindu</option>
+                <option value='khongucu'>Khongucu</option></select></td>
+        </tr>
+        <tr>
+            <td><label for="alamat">Alamat Lengkap</label></td>
+            <td>: <input type="text"></td>
+        </tr>
+        <tr>
+            <td><label for="kelurahan">Kelurahan</label></td>
+            <td>: <input type="text"></td>
+        </tr>
+        <tr>
+            <td><label for="kecamatan">Kecamatan</label></td>
+            <td>: <input type="text"></td>
+        </tr>
+        <tr>
+            <td><label for="kota/kabupaten">Kota/Kabupaten</label></td>
+            <td>: <input type="text"></td>
+        </tr>
+        <tr>
+            <td><label for="provinsi">Provinsi</label></td>
+            <td>: <input type="text"></td>
+        </tr>
+    </table><br>
+    <table>
+        <tr>
+            <td><strong>Bidang Keahlian Yang Diminat</strong></td>
+        </tr>
+    </table><hr>
+    <table>
+		<tr>
+			<td><input type="checkbox" name="major1" value="tkj" required="">TEKNIK KOMPUTER DAN JARINGAN<br>
+				<input type="checkbox" name="major2" value="otomotif" required="">TEKNIK OTOMOTIF<br>
+				<input type="checkbox" name="major3" value="administrasi perkantoran" required="">ADMINISTRASI PERKANTORAN<br>
+				<input type="checkbox" name="major4" value="multimedia" required="">MULTIMEDIA<br>
+				<input type="checkbox" name="major5" value="farmasi" required="">FARMASI</td>
+		</tr>
+    </table><br>
+    <table>
+        <tr>
+            <td><strong>Data Orang Tua</strong></td>
+        </tr>
+    </table><hr>
+    <table>
+        <tr>
+            <td><label for="nama">Nama Ayah/Ibu</label></td>
+            <td>: <input type="text"></td>
+        </tr>
+        <tr>
+            <td><label for="lahir">Tempat Lahir</label></td>
+            <td>: <input type="text"></td>
+        </tr>
+        <tr>
+            <td><label for="lahir">Tanggal Lahir</label></td>
+            <td>: <input type="date" name="date" required=""></td>
+        </tr>
+        <tr>
+            <td><label for="agama">Agama</label></td>
+            <td>: <select name='agama'>
+                <option value='text'>Lainnya</option>
+                <option value='islam'>Islam</option>
+                <option value='kristen'>Kristen</option>
+                <option value='katholik'>Katholik</option>
+                <option value='hindu'>Hindu</option>
+                <option value='khongucu'>Khongucu</option></select></td>
+        </tr>
+        <tr>
+            <td><label for="pendidikan">Pendidikan</label></td>
+            <td>: <select name='pendidikan'>
+                <option value='text'>Lainnya</option>
+                <option value='sarjana'>Sarjana (S1)</option>
+                <option value='diploma'>Diploma III</option>
+                <option value='sma/smk'>SMA/SMK</option>
+                <option value='smp'>SMP</option>
+                <option value='sd'>SD</option></select></td>
+        </tr>
+        <tr>
+            <td><label for="pekerjaan">Pekerjaan</label></td>
+            <td>: <select name='pekerjaan'>
+                <option value='text'>Lainnya</option>
+                <option value='pns/bumn'>PNS/BUMN</option>
+                <option value='karyawan'>Karyawan Swasta</option>
+                <option value='wiraswasta'>Wiraswasta</option>
+                <option value='buruh'>Buruh</option>
+                <option value='iburumahtangga'>Ibu Rumah Tangga</option></select></td>
+        </tr>
+    </table><br>
+    <button type="submit">KIRIM</button>
+    <button type="reset">BATAL</button>
+    </form>
+</body>
+</html>
